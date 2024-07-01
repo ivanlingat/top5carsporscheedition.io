@@ -1,0 +1,2241 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  }
+  body{
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif; 
+  }
+  nav{
+    background:transparent;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    background-color:rgba(0,0,0,0.6);
+    
+    
+  }
+
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background-color:rgba(0,0,0,0.6);
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color:rgba(0,0,0,0.6);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      background-color:rgba(0,0,0,0.6);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+
+
+
+  /*  homepage  */
+
+
+
+.homepage{
+    background-image: url(/homepagepic/02.jpg);
+    display:flex;
+    min-height: 100vh;
+    height:auto;
+}
+
+.homepagecontent{
+  text-align: left;
+  color: white;
+}
+
+/* Homepage Section */
+#homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url(/homepagepic/02.jpg); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+}
+
+.content {
+  margin-left: 20px; 
+}
+
+/* Responsive Text Sizes */
+#homepage h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+#homepage h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#homepage p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Center scrolldown icon at the bottom */
+.scrolldown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #homepage h1 {
+      font-size: 3.5rem;
+  }
+
+  #homepage h2 {
+      font-size: 1.8rem;
+  }
+
+  #homepage p {
+      font-size: 1.2rem;
+  }
+
+  .scrolldown {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #homepage h1 {
+      font-size: 3rem;
+  }
+
+  #homepage h2 {
+      font-size: 2rem;
+  }
+
+  #homepage p {
+      font-size: 1rem;
+  }
+
+  .scrolldown {
+      font-size: 1.2rem;
+  }
+}
+
+/*------ homepage */
+
+
+/*gt3rshomepage*/
+
+.gt3rs {
+  min-height: 100vh;
+  background-image: url(/gt3rspics/porsche-normal.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.titlegt3rs {
+  text-align: left;
+  padding-left: 100px;
+
+  color: white;
+  font-size: 3rem;
+  padding-top:34%;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.headlinegt3rs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  
+  margin-top: 20px;
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+
+.headlinegt3rs div {
+  text-align: center;
+  width: 15%;
+  margin-bottom: 20px;
+  
+}
+
+.headlinegt3rs h2 {
+  font-size: 1.5rem;
+}
+
+.headlinegt3rs p {
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .titlegt3rs {
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+
+ 
+
+  .headlinegt3rs div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlegt3rs {
+    font-size: 1.2rem;
+    padding-top: 40%;
+    padding-bottom: 10%;
+    
+  }
+
+ 
+
+  .headlinegt3rs div {
+    width: 100%;
+    padding-right: 20%;
+
+  }
+}
+
+
+
+
+
+
+
+/* end homepage gt3rs*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  homepagegt3rs  */
+
+
+.GT3rshomepage{
+    background-image: url(/gt3rspics/porsche-normal.jpg);
+    display:flex;
+    min-height: 100vh;
+    height:auto;
+    background-position: center;
+    
+
+
+
+}
+
+
+
+
+/*  engineGt3rs  */
+
+.GT3RSengine {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start; /* Aligns items to the top */
+    gap: 20px;
+    padding: 50px;
+    
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    background-color:rgb(30, 30, 32);
+   
+    color: #fefefe;
+    
+}
+
+.textGT3RSengine {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures text is aligned to the top */
+    
+}
+
+.imageGT3RSengine img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lineg1t3rs{
+  
+  background-color: rgb(40, 39, 39);
+  height:3px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .GT3RSengine {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*  Gt3rs yt */
+
+
+
+.videosectionGT3rs {
+    padding: 10px 0; 
+    background-color: #f0f0f0; 
+    background-color:rgb(30, 30, 32);
+    color: white;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+    
+    
+  }
+  
+  .videocontainerGT3RS {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Adjust column widths as needed */
+    gap: 20px; /* Adjust the gap between video and text */
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .textwrapperGT3RS {
+    align-self: flex-start; /* Align to the top of the grid cell */
+   
+  }
+
+  .lineg2t3rs{
+  
+    background-color: rgb(40, 39, 39);
+    height:2px;
+    color: rgb(40, 39, 39);
+    border: rgb(30, 30, 32);
+    
+    
+    
+  }
+  
+  .textwrapperGT3RS h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  .videowrapperGT3RS {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Aspect ratio (height/width) for 16:9 video */
+    border-radius: 10px;
+  }
+  
+  .videowrapperGT3RS iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .videocontainerGT3RS {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+  }
+
+
+  /*   section Exterior gt3rs */
+
+
+  .contentsectionExterior{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between sections */
+    padding: 40px; 
+    padding-top: 1px;
+
+    background-color:rgb(30, 30, 32);
+    color: white;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+
+  .lineg3t3rs{
+  
+    background-color: rgb(40, 39, 39);
+    height:2px;
+    color: rgb(40, 39, 39);
+    border: rgb(30, 30, 32);
+    
+    
+    
+    
+  }
+  
+  .textwrapperExterior {
+    align-self: flex-start; /* Align to the top left */
+    padding-top: 10px;
+  }
+  
+  .textwrapperExterior h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  .imagewrapperExterior {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; 
+    
+  }
+  
+  .imagewrapperExterior img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .imagewrapperExterior {
+      grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    }
+  }
+
+   /*   section Exterior gt3rs END */
+
+
+
+
+   /*   section Interior gt3rs */
+
+
+   .contentsectionInterior{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between sections */
+    padding: 40px; 
+
+    background-color:rgb(30, 30, 32);
+    color: white;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  .lineg4t3rs{
+  
+    background-color: rgb(40, 39, 39);
+    height:2px;
+    color: rgb(40, 39, 39);
+    border: rgb(30, 30, 32);
+   
+    
+    
+  }
+  
+  .textwrapperInterior {
+    align-self: flex-start; /* Align to the top left */
+    margin-top: 0px;
+  }
+  
+  .textwrapperInterior h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  .imagewrapperInterior {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; 
+    
+  }
+  
+  .imagewrapperInterior img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .imagewrapperInterior {
+      grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+      font-size: 5px;
+
+     
+    }
+
+    .textwrapperInterior{
+      font-size: 13px;
+
+    }
+  }
+
+  /*--- interior gt3rs END */
+  
+  
+ /*--- gt3rs CODE END */
+  
+
+
+
+
+  /*gt3homepage*/
+
+.gt3 {
+  min-height: 100vh;
+  background-image: url(/gt3/gt3homwpage.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.titlegt3 {
+  text-align: left;
+  padding-left: 100px;
+
+  color: white;
+  font-size: 3rem;
+  padding-top:34%;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.headlinegt3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  
+  margin-top: 20px;
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+
+.headlinegt3 div {
+  text-align: center;
+  width: 15%;
+  margin-bottom: 20px;
+  
+}
+
+.headlinegt3 h2 {
+  font-size: 1.5rem;
+}
+
+.headlinegt3 p {
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .titlegt3 {
+    font-size: 1.5rem;
+    padding-top: 5%;
+  }
+
+  .headlinegt3 div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlegt3 {
+    font-size: 1.2rem;
+    padding-top: 40%;
+    padding-bottom: 10%;
+    
+  }
+
+  .headlinegt3 div {
+    width: 100%;
+    padding-right: 20%;
+
+  }
+}
+
+/* Additional styles */
+.gt3rsdetails {
+  background-color: rgb(30, 30, 32);
+  color: white;
+  padding: 10px;
+}
+
+
+
+  /*GT3 homepage end*/
+
+
+
+
+  /*  engine and performance Gt3  */
+
+.GT3engine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start; /* Aligns items to the top */
+  gap: 20px;
+  padding: 50px;
+  
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  background-color:rgb(30, 30, 32);
+ 
+  color: #fefefe;
+  
+}
+
+.textGT3engine {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text is aligned to the top */
+  
+}
+
+.imageGT3engine img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lineg1t3rs{
+
+background-color: rgb(40, 39, 39);
+height:3px;
+color: rgb(40, 39, 39);
+border: rgb(30, 30, 32);
+
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .GT3engine {
+      grid-template-columns: 1fr;
+
+
+  }
+
+  .textGT3engine h1{
+    font-size: 18px;
+  }
+
+  .textGT3engine{
+    font-size: 15px;
+
+  }
+}
+
+/*  engine and performance Gt3 end  */
+
+
+
+
+
+
+
+
+
+
+/*  Gt3 yt driving dynamics start*/
+
+
+
+.videosectionGT3 {
+  padding: 10px 0;
+  background-color: #f0f0f0; 
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+
+  
+  
+}
+
+.videocontainerGT3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Adjust column widths as needed */
+  gap: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+ 
+}
+
+.textwrapperGT3{
+  align-self: flex-start; /* Align to the top of the grid cell */
+ 
+}
+
+.lineg2t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+}
+
+.textwrapperGT3 h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.videowrapperGT3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Aspect ratio (height/width) for 16:9 video */
+  border-radius: 10px;
+}
+
+.videowrapperGT3 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .videocontainerGT3 {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+}
+
+
+
+/*  Gt3 yt driving dynamics END*/
+
+
+/*   section Exterior gt3 */
+
+
+.contentsectionExteriorgt3{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between sections */
+  padding: 40px; 
+  padding-top: 1px;
+
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.lineg3t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+  
+}
+
+.textwrapperExteriorgt3 {
+  align-self: flex-start; /* Align to the top left */
+  padding-top: 10px;
+}
+
+.textwrapperExteriorgt3 h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperExteriorgt3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperExteriorgt3 img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperExteriorgt3 {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+
+  }
+
+  .textwrapperExteriorgt3 h2{
+    font-size: 15px;
+    
+  }
+
+
+  .textwrapperExteriorgt3 {
+    font-size: 15px;
+  }
+  
+}
+
+ /*   section Exterior gt3 END */
+
+
+
+
+
+  /*   section Interior gt3*/
+
+
+  .contentsectionInteriorGT3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between sections */
+    padding: 40px;
+
+    background-color:rgb(30, 30, 32);
+    color: white;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  .lineg4t3rs{
+  
+    background-color: rgb(40, 39, 39);
+    height:2px;
+    color: rgb(40, 39, 39);
+    border: rgb(30, 30, 32);
+   
+    
+    
+  }
+  
+  .textwrapperInteriorGT3 {
+    align-self: flex-start; /* Align to the top left */
+    margin-top: 0px;
+  }
+  
+  .textwrapperInteriorGT3 h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  .imagewrapperInteriorGT3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; /* Adjust the gap between images */
+    
+  }
+  
+  .imagewrapperInteriorGT3 img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .imagewrapperInteriorGT3 {
+      grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+      font-size: 5px;
+
+     
+    }
+
+    .textwrapperInteriorGT3{
+      font-size: 13px;
+
+    }
+  }
+
+  /*--- interior gt3rs END */
+
+
+
+
+
+
+
+
+  /* turbos code start */
+
+  /*turboshomepage*/
+
+.Turbos {
+  min-height: 100vh;
+  background-image: url(/turbos/homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.titleturbos {
+  text-align: left;
+  padding-left: 100px;
+
+  color: white;
+  font-size: 3rem;
+  padding-top:34%;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.headlineturbos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  
+  margin-top: 20px;
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+
+.headlineturbos div {
+  text-align: center;
+  width: 15%;
+  margin-bottom: 20px;
+  
+}
+
+.headlineturbos h2 {
+  font-size: 1.5rem;
+}
+
+.headlineturbos p {
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .titleturbos {
+    font-size: 1.5rem;
+    padding-top: 5%;
+    
+  }
+
+  .headlineturbos div {
+    width: 45%;
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titleturbos {
+    font-size: 1.2rem;
+    padding-top: 40%;
+    padding-bottom: 10%;
+    padding-left: 50px;
+    
+    
+  }
+
+  .headlineturbos div {
+    width: 100%;
+    padding-right: 20%;
+    margin-top: 10%;
+
+    
+
+  }
+
+  .headlineturbos p {
+    font-size: 10px;
+    
+  }
+
+  .titleturbos h1{
+    padding-bottom: 60%;
+  }
+  
+}
+
+
+
+
+/* end homepage gt3rs*/
+
+
+
+
+
+/*  engineTURBOS  */
+
+.TURBOSengine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start; /* Aligns items to the top */
+  gap: 20px;
+  padding: 50px;
+  
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  background-color:rgb(30, 30, 32);
+ 
+  color: #fefefe;
+  
+}
+
+.textTURBOSSengine {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text is aligned to the top */
+  
+}
+
+.imageTURBOSSengine img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lineg1t3rs{
+
+background-color: rgb(40, 39, 39);
+height:3px;
+color: rgb(40, 39, 39);
+border: rgb(30, 30, 32);
+
+
+
+}
+
+
+@media (max-width: 768px) {
+  .TURBOSengine {
+      grid-template-columns: 1fr;
+  }
+
+  .textTURBOSSengine h1{
+    font-size: 15px;
+  }
+
+  .textTURBOSSengine p{
+    font-size: 15px;
+  }
+}
+
+/*  engineTURBO S END  */
+
+
+
+
+/*  TURBOS yt */
+
+
+
+.videosectionTURBOS {
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+
+  
+  
+}
+
+.videocontainerTURBOS {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Adjust column widths as needed */
+  gap: 20px; /* Adjust the gap between video and text */
+  max-width: 1200px; 
+  margin: 0 auto; /
+ 
+}
+
+.textwrapperGT3RS {
+  align-self: flex-start; /* Align to the top of the grid cell */
+ 
+}
+
+.lineg2t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+}
+
+.textwrapperGT3RS h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.videowrapperTURBOS {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Aspect ratio (height/width) for 16:9 video */
+  border-radius: 10px;
+}
+
+.videowrapperTURBOS iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .videocontainerTURBOS {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  .textwrapperTURBOS p{
+    font-size: 15px;
+
+  }
+
+
+  .textwrapperTURBOS h2{
+    font-size: 15px;
+
+  }
+
+  .textwrapperTURBOS h3{
+    font-size: 15px;
+
+  }
+}
+
+/*  TURBOS yt END */
+
+
+
+/*   section Exterior TURBOS */
+
+
+.contentsectionExteriorTURBOS{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 40px; 
+  padding-top: 1px;
+
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.lineg3t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+  
+}
+
+.textwrapperExterior {
+  align-self: flex-start; /* Align to the top left */
+  padding-top: 10px;
+}
+
+.textwrapperExteriorTURBOS h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperExteriorTURBOS {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperExteriorTURBOS img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperExteriorTURBOS {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+  }
+}
+
+ /*   section Exterior TURBOS END */
+
+
+
+
+
+
+
+
+
+ /*   section Interior TURBOS */
+
+
+ .contentsectionInteriorTURBOS{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between sections */
+  padding: 40px; 
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.lineg4t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+ 
+  
+  
+}
+
+.textwrapperInteriorTURBOS {
+  align-self: flex-start; /* Align to the top left */
+  margin-top: 0px;
+}
+
+.textwrapperInteriorTURBOS h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperInteriorTURBOS {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperInteriorTURBOS img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperInteriorTURBOS {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    font-size: 5px;
+
+   
+  }
+
+  .textwrapperInteriorTURBOS{
+    font-size: 13px;
+
+  }
+}
+
+/*--- interior TURBOS END */
+
+/*--- CODE TURBOS END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CGT code start */
+
+  /*CGT homepage*/
+
+  .CGT {
+    min-height: 100vh;
+    background-image: url(/CGT/cgthome.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .titleCGT {
+    text-align: left;
+    padding-left: 100px;
+  
+    color: white;
+    font-size: 3rem;
+    padding-top:34%;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .headlineCGT {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    
+    margin-top: 20px;
+    color: white;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  
+  .headlineCGT div {
+    text-align: center;
+    width: 15%;
+    margin-bottom: 20px;
+    
+  }
+  
+  .headlineCGT h2 {
+    font-size: 1.5rem;
+  }
+  
+  .headlineCGT p {
+    font-size: 0.9rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .titleCGT {
+      font-size: 1.5rem;
+      padding-top: 5%;
+      
+    }
+  
+    .headlineCGT div {
+      width: 45%;
+      font-size: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titleCGT {
+      font-size: 1.2rem;
+      padding-top: 40%;
+      padding-bottom: 10%;
+      padding-left: 50px;
+      
+      
+    }
+  
+    .headlineCGT div {
+      width: 100%;
+      padding-right: 20%;
+      margin-top: 10%;
+  
+      
+  
+    }
+  
+    .headlineCGT p {
+      font-size: 10px;
+      
+    }
+  
+    .titleturbos h1{
+      padding-bottom: 60%;
+    }
+    
+  }
+  
+  
+  
+  
+  /* end homepage CGT*/
+
+
+
+  
+/*  engine CGT  */
+
+.CGTengine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start; /* Aligns items to the top */
+  gap: 20px;
+  padding: 50px;
+  
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  background-color:rgb(30, 30, 32);
+ 
+  color: #fefefe;
+  
+}
+
+.textCGTSengine {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text is aligned to the top */
+  
+}
+
+.imageCGTSengine img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lineg1t3rs{
+
+background-color: rgb(40, 39, 39);
+height:3px;
+color: rgb(40, 39, 39);
+border: rgb(30, 30, 32);
+
+
+
+}
+
+
+@media (max-width: 768px) {
+  .CGTengine {
+      grid-template-columns: 1fr;
+  }
+
+  .textCGTSengine h1{
+    font-size: 15px;
+  }
+
+  .textCGTSengine p{
+    font-size: 15px;
+  }
+}
+
+/*  engine CGT  END  */
+
+
+
+
+/*  CGT yt */
+
+
+
+.videosectionCGT {
+  padding: 10px 0;
+  background-color: #f0f0f0; 
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+
+  
+  
+}
+
+.videocontainerCGT {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Adjust column widths as needed */
+  gap: 20px; /* Adjust the gap between video and text */
+  max-width: 1200px; /* Optional: Set a max-width for the section */
+  margin: 0 auto; /* Optional: Center align the section */
+ 
+}
+
+.textwrapperCGT {
+  align-self: flex-start; /* Align to the top of the grid cell */
+ 
+}
+
+.lineg2t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+}
+
+.textwrapperCGT h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.videowrapperCGT {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Aspect ratio (height/width) for 16:9 video */
+  border-radius: 10px;
+}
+
+.videowrapperCGT iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .videocontainerCGT {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  .textwrapperCGT p{
+    font-size: 15px;
+
+  }
+
+
+  .textwrapperCGT h2{
+    font-size: 15px;
+
+  }
+
+  .textwrapperCGT h3{
+    font-size: 15px;
+
+  }
+}
+
+/*  CGT yt END */
+
+
+
+/*   section Exterior CGT */
+
+
+.contentsectionExteriorCGT{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between sections */
+  padding: 40px; 
+  padding-top: 1px;
+
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.lineg3t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+  
+}
+
+.textwrapperExteriorCGT {
+  align-self: flex-start; /* Align to the top left */
+  padding-top: 10px;
+}
+
+.textwrapperExteriorCGT h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperExteriorCGT {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperExteriorCGT img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperExteriorCGT {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+  }
+}
+
+ /*   section Exterior CGT END */
+
+
+
+
+
+
+
+
+
+ /*   section Interior CGT */
+
+
+ .contentsectionInteriorCGT{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between sections */
+  padding: 40px; 
+
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.lineg4t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+ 
+  
+  
+}
+
+.textwrapperInteriorCGT {
+  align-self: flex-start; /* Align to the top left */
+  margin-top: 0px;
+}
+
+.textwrapperInteriorCGT h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperInteriorCGT {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperInteriorCGT img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperInteriorCGT {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    font-size: 5px;
+
+   
+  }
+
+  .textwrapperInteriorCGT{
+    font-size: 13px;
+
+  }
+}
+
+/*--- interior CGT END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 959 code start */
+
+  /*959 homepage*/
+
+  .p959 {
+    min-height: 100vh;
+    background-image: url(/959/homepage959.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .title959 {
+    text-align: left;
+    padding-left: 100px;
+  
+    color: white;
+    font-size: 3rem;
+    padding-top:34%;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .headline959 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    
+    margin-top: 20px;
+    color: white;
+    font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  
+  .headline959 div {
+    text-align: center;
+    width: 15%;
+    margin-bottom: 20px;
+    
+  }
+  
+  .headline959 h2 {
+    font-size: 1.5rem;
+  }
+  
+  .headline959 p {
+    font-size: 0.9rem;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .title959 {
+      font-size: 1.5rem;
+      padding-top: 5%;
+      
+    }
+  
+    .headline959 div {
+      width: 45%;
+      font-size: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title959 {
+      font-size: 1.rem;
+      padding-top: 40%;
+      padding-bottom: 10%;
+      padding-left: 50px;
+      
+      
+    }
+  
+    .headline959 div {
+      width: 100%;
+      padding-right: 20%;
+      margin-top: 10%;
+  
+      
+  
+    }
+  
+    .headline959 p {
+      font-size: 10px;
+      
+    }
+  
+    .title959 h1{
+      padding-bottom: 60%;
+    }
+    
+  }
+  
+  
+  
+  
+  /* end homepage 959*/
+
+
+
+  
+/*  engine 959  */
+
+.p959engine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start; /* Aligns items to the top */
+  gap: 20px;
+  padding: 50px;
+  
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  background-color:rgb(30, 30, 32);
+ 
+  color: #fefefe;
+  
+}
+
+.textp959engine {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text is aligned to the top */
+  
+}
+
+.imagep959engine img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.lineg1t3rs{
+
+background-color: rgb(40, 39, 39);
+height:3px;
+color: rgb(40, 39, 39);
+border: rgb(30, 30, 32);
+
+
+
+}
+
+
+@media (max-width: 768px) {
+  .p959engine {
+      grid-template-columns: 1fr;
+  }
+
+  .textp959engine h1{
+    font-size: 15px;
+  }
+
+  .textp959engine p{
+    font-size: 15px;
+  }
+}
+
+/*  engine 959  END  */
+
+
+/*  959 yt */
+
+
+
+.videosectionP959 {
+  padding: 10px 0; 
+  background-color: #f0f0f0; 
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+
+  
+  
+}
+
+.videocontainerP959 {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Adjust column widths as needed */
+  gap: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+ 
+}
+
+.textwrapperP959 {
+  align-self: flex-start; /* Align to the top of the grid cell */
+ 
+}
+
+.lineg2t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+}
+
+.textwrapperP959 h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.videowrapperP959 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Aspect ratio (height/width) for 16:9 video */
+  border-radius: 10px;
+}
+
+.videowrapperP959 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .videocontainerP959 {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+
+  .textwrapperP959 p{
+    font-size: 12px;
+
+  }
+
+
+  .textwrapperP959 h2 {
+    font-size: 15px;
+
+  }
+
+  .textwrapperP959 h3{
+    font-size: 15px;
+
+  }
+}
+
+/*  959 yt END */
+
+
+
+
+
+
+
+
+
+
+/*   section Exterior 959 */
+
+
+.contentsectionExteriorp959{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between sections */
+  padding: 40px; 
+  padding-top: 1px;
+
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.lineg3t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+  
+  
+  
+  
+}
+
+
+.textwrapperExteriorp959 {
+  align-self: flex-start; /* Align to the top left */
+  padding-top: 10px;
+}
+
+.textwrapperExteriorp959 h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperExteriorp959 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperExteriorp959 img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperExteriorp959 {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+  }
+}
+
+ /*   section Exterior 959 END */
+
+
+
+
+
+
+
+
+
+ /*   section Interior 959 */
+
+
+ .contentsectionInteriorp959{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the gap between sections */
+  padding: 40px; 
+  background-color:rgb(30, 30, 32);
+  color: white;
+  font-family: 'Porsche Next', 'Arial Narrow', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.lineg4t3rs{
+
+  background-color: rgb(40, 39, 39);
+  height:2px;
+  color: rgb(40, 39, 39);
+  border: rgb(30, 30, 32);
+ 
+  
+  
+}
+
+.textwrapperInteriorp959 {
+  align-self: flex-start; /* Align to the top left */
+  margin-top: 0px;
+}
+
+.textwrapperInteriorp959 h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.imagewrapperInteriorp959 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 20px; /* Adjust the gap between images */
+  
+}
+
+.imagewrapperInteriorp959 img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .imagewrapperInteriorp959 {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    font-size: 5px;
+
+   
+  }
+
+  .textwrapperInteriorp959{
+    font-size: 13px;
+
+  }
+}
+
+/*--- interior 959 END */
+
+
+
+
+/*   Footer */
+
+footer{
+  background-color:rgb(51, 51, 50);
+  color: white;
+}
+
+.container{
+  
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  
+  
+  
+}
+
+
+.socials{
+  padding-bottom:10px ;
+}
+
+.content{
+  justify-content: center;
+
+
+
+
+}
+
+
+
+i{
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
